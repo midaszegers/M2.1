@@ -33,9 +33,9 @@ int Arraydelay3[] = {100, 200, 400};       // 15 < Delay
 TMC2209Stepper driver(&SERIAL_PORT, R_SENSE, DRIVER_ADDRESS);
 AccelStepper stepper1(AccelStepper::DRIVER, STEP_PIN_1, DIR_PIN_1);
 
-char ssid[] = "iotroam";       // your network SSID (name)
-char password[] = "midas123";  // your network key
-#define API_KEY "AIzaSyAeIhq-99NvY1k03LZbRssbulhemGVncWs"  // your google apps API Token
+char ssid[] = "iotroam";       // your network SSID (name), iotroam for TU/e students!
+char password[] = "PASSWORD";  // your network key
+#define API_KEY "API_TOKEN"    // your google apps API Token
 
 WiFiClientSecure client;
 GoogleMapsApi api(API_KEY, client);
